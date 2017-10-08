@@ -1,0 +1,314 @@
+body
+{
+	background: snow;
+	color: slategray;
+	font-family: Roboto, sans-serif;
+	padding-top: 3em;
+}
+
+#works-cited li
+{
+	padding-left: 3.2em;
+	text-indent: -2.8em;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand
+{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5
+{
+    color: rgb(61, 156, 152);
+}
+
+.home.bg
+{
+	background: linear-gradient(rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 0.2)), url('./images/skyline.jpg');
+	height: 500px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.jumbotron
+{
+	background: transparent;
+	color: white;
+	height: 500px;
+	margin-bottom: 0;
+	text-shadow: #1f1e1e 0 1px 1px;
+}
+
+.hero
+{
+	max-width: 100%;
+	min-height: 452px;
+	overflow: hidden;
+	position: relative;
+}
+
+.hero img
+{
+	height: 500px;
+	left: 0;
+	max-width: none;
+	position: absolute;
+	top: -48px;
+	z-index: -1;
+}
+
+span
+{
+	hyphens: auto;
+	word-break: break-all;
+	word-break: break-word;
+}
+
+html
+{
+	min-height: 100%;
+	position: relative;
+}
+
+body
+{
+	margin-bottom: 60px;
+}
+
+.footer
+{
+	bottom: 0;
+	height: 3em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.container
+{
+	max-width: 680px;
+}
+
+#frame
+{
+	min-height: 800px;
+}
+
+#frame[src$="history-frame.html"]
+{
+	min-height: 200px;
+	width: 100%;
+}
+
+.frame
+{
+	background: snow;
+}
+
+.frame h1
+{
+	color: rgb(61, 156, 152);
+	text-align: center;
+}
+
+#slideshow figure
+{
+	position: relative;
+}
+
+#slideshow .figure-caption
+{
+	min-height: 3em;
+}
+
+.controls
+{
+	display: flex;
+	justify-content: space-between;
+	left: 0;
+	padding: 0 1em;
+	position: absolute;
+	top: calc(50% - 2em);
+	width: 100%;
+}
+
+.previous, .next
+{
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	color: rgba(100, 100, 100, 0.3);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	position: relative;
+	text-align: center;
+	transition: all .3s;
+	user-select: none;
+	vertical-align: middle;
+	width: 1.5em;
+}
+
+.previous span, .next span
+{
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.previous span
+{
+	padding-right: 6px;
+}
+
+.next span
+{
+	padding-left: 6px;
+}
+
+.previous:hover, .next:hover
+{
+	color: black;
+}
+
+.previous:active, .next:active
+{
+	transform: scale(1.25, 1.25);
+}
+
+#hover-items
+{
+	overflow: hidden;
+}
+
+#hover-items .item
+{
+	border-radius: 10px 10px 10px 10px;
+	box-sizing: content-box;
+	margin: 1em;
+	overflow: hidden;
+    position: relative;
+}
+
+#hover-items .item::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: none;
+    transition: all .3s linear;
+    z-index: 1;
+}
+
+#hover-items .item:hover::before
+{
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#hover-items img
+{
+    border-radius: 10px 10px 10px 10px;
+	display: block;
+	height: auto;
+	left: 50%;
+	max-height: none;
+	max-width: none;
+	min-height: 100%;
+	min-width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    width: auto;
+    display: block;
+}
+
+#hover-items .caption.hide
+{
+	opacity: 0;
+}
+
+#hover-items .caption
+{
+    border-radius: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	color: black;
+    font-size: 1.3em;
+	height: 100%;
+	left: 50%;
+    line-height: 1.777;
+	padding: 1.3em;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	transition: all .5s;
+	width: 100%;
+	z-index: 3;
+}
+
+#hover-items .caption.show
+{
+	opacity: 1;
+}
+
+.error
+{
+	color: red;
+	display: none;
+	font-size: 1em;
+}
+
+.error.show
+{
+	display: block;
+}
+
+#success
+{
+	color: green;
+	display: none;
+	font-size: 1em;
+}
+
+#success.show
+{
+	display: block;
+}
+
+form textarea.invalid
+{
+	border: 1px solid red;
+}
+
+form select.invalid
+{
+	border: 1px solid red;
+}
+
+form label.invalid
+{
+	color: red;
+}
+
+form input.invalid
+{
+	border: 1px solid red;
+}
+
+.form-check-inline
+{
+    margin-left: 0 !important;
+    margin-right: .75rem;
+}

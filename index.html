@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <title>Seattle, Washington | Rain City</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Roboto" rel="stylesheet">
+    <script src="js/greeting.js" defer></script>
+    <script src="js/cookie.js" defer></script>
+    <script src="js/jumbo.js" defer></script>
+</head>
+
+<body>
+    <div id="back"><a href="/projects">↩ back to projects</a></div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rain City <small class="text-muted">Seattle, WA</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="outdoors.html">Outdoors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home bg"></div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-white">Welcome!</h1>
+            <p class="lead" id="greeting"></p>
+            <p id="user-state"></p>
+            <p><a class="btn btn-primary btn-lg" href="/outdoors.html#weather" role="button">Check the weather &raquo;</a></p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1>Project Synopsis</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <h2>Scope</h2>
+                <p>This website is my final project for the Web Scripting and AJAX course I took during the Summer 2017 semester.</p>
+                <p>The project requirements stated that students had to make a website about a city, its history, and its culture.
+                    The website would implement features that demonstrated an understanding of the class learning objectives,
+                    including: interacting with the DOM, using event handlers, interacting with APIs, using regular expressions,
+                    and form handling.</p>
+                <p>Before adding this project to my portfolio, I went through and revised the layout using Bootstrap. The most
+                    significant change I made was adding a hero image on each page; otherwise, the content is mostly the
+                    same.
+                </p>
+            </div>
+            <div class="col-lg">
+                <h2>Features</h2>
+                <p>Original JavaScript implementations of mine that you'll find in the project include: </p>
+                <ul>
+                    <li><a href="js/weather.js" title="View source code">AJAX weather forecast using OpenWeatherMap API</a></li>
+                    <li><a href="js/contact.js" title="View source code">Client-side contact form validation</a></li>
+                    <li><a href="js/slideshow.js" title="View source code">Slideshow including captions</a></li>
+                    <li><a href="js/cookie.js" title="View source code">Cookie reader/writer and custom welcome message</a></li>
+                    <li><a href="js/greeting.js" title="View source code">Date time manipulation and time-dependent greeting</a></li>
+                    <li><a href="js/iframe.js" title="View source code">iFrame external website viewer</li>
+                    <li><a href="js/hover.js" title="View source code">Animated image descriptions that appear on roll-over</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <h2>Works Cited</h2>
+                <ul id="works-cited" class="list-unstyled">
+                    <li>“Brief History of Seattle.” <i>Brief History of Seattle - CityArchives</i>, Seattle Municipal Archives,
+                        www.seattle.gov/cityarchives/seattle-facts/brief-history-of-seattle.
+                    </li>
+                    <li>“History of Seattle.” <i>Wikipedia</i>, Wikimedia Foundation, 15 July 2017, en.wikipedia.org/wiki/History_of_Seattle.</li>
+                    <li>Kueter, Vince. “Seattle through the Years.” <i>The Seattle Times</i>, The Seattle Times Company, 13 Nov.
+                        2001, <span>old.seattletimes.com/news/local/seattle_history/articles/timeline.html.</span>
+                    </li>
+                    <li><i>Various Images</i>, The Olympic Peninsula. Personal photographs by author. June 2012.</li>
+                    <li>Friedman, Jay. “Pagliacci Pizza Slice.” <i>Gastrolust</i>, Jay Friedman, Seattle, 23 Sept. 2008, gastrolust.com/2008/09/dishin-the-pagliacci-slice/.
+                    </li>
+                    <li>“Burger." <i>Press - Rain City Burgers</i>, Rain City Burgers, Seattle, raincityburgers.com/press/.</li>
+                    <li>"Shawarma." <i>Shawarma King - Exceptional Taste, Handmade Quality</i>, Shawarma King, Seattle, shawarmakingus.com/.</li>
+                    <li>Martucci, Brian. “Best 38 Fun Things to Do in Seattle – Activities & Attractions on the Cheap.” <i>Money Crashers</i>,
+                        Money Crashers, 21 May 2016, www.moneycrashers.com/fun-things-do-seattle-activities-attractions/.</li>
+                    <li>“Seattle, Washington Climate.” <i>Sperling's Bestplaces</i>, Sperling's Bestplaces, <span>www.bestplaces.net/climate/city/washington/seattle.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container"><small>Thanks for checking out this project by Anna Elde 😊</small></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

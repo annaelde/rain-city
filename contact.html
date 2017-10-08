@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <title>Rain City | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Roboto" rel="stylesheet">
+    <script src="js/contact.js" defer></script>
+    <script src="js/parallax.js" defer></script>
+</head>
+
+<body>
+    <div id="back"><a href="/projects">↩ back to projects</a></div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Rain City <small class="text-muted">Seattle, WA</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="outdoors.html">Outdoors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero mb-5">
+        <img src="images/public-library.jpg" alt="The Seattle Public Library's Central Library in Downtown Seattle." class="img-fluid">
+    </div>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <h1>Contact</h1>
+                <p>If you would like me to add something to this site about Seattle to this website, please fill out the contact
+                    form below and I'll get in touch with you.</p>
+                <small class="text-muted">This form is for client-side demonstration purposes only.</small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form id="contactForm" action="#">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="required form-control" />
+                        <p data-for="name" class="error">Please enter a valid name.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="email form-control required" />
+                        <p data-for="email" class="error">Please enter a valid email.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailCopy">Confirm Email Address</label>
+                        <input type="email" id="emailCopy" class="email form-control copy required" />
+                        <p data-for="emailCopy" class="error">Please enter a matching email.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="neighborhood">Favorite Seattle Neighborhoods?</label>
+                        <p data-for="neighborhood" class="error">Please select at least one neighborhood.</p>
+                        <fieldset id="neighborhood">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="capitolHill">
+                        <input class="form-check-input" type="checkbox" name="neighborhood" id="capitolHill" />
+                        Capitol Hill
+                        </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="uDistrict">
+                    <input type="checkbox" name="neighborhood" class="form-check-input" id="uDistrict" />
+                    U-District
+                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="greenLake">
+                    <input type="checkbox" name="neighborhood" class="form-check-input" id="greenLake" />
+                    Green Lake
+                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="queenAnne">
+                    <input type="checkbox" name="neighborhood" class="form-check-input" id="queenAnne" />
+                    Queen Anne
+                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="roosevelt">
+                    <input type="checkbox" name="neighborhood"  class="form-check-input" id="roosevelt" />
+                    Roosevelt
+                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="wallingford">
+                    <input type="checkbox" name="neighborhood" class="form-check-input" id="wallingford" />
+                    Wallingford
+                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="ballard">
+                    <input type="checkbox" class="form-check-input" name="neighborhood" id="ballard" />
+                    Ballard
+                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="fremont">
+                    <input type="checkbox" class="form-check-input" name="neighborhood" id="fremont" />
+                    Fremont
+                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="other">
+                    <input type="checkbox" class="form-check-input" name="neighborhood" id="other" />
+                    Other
+                    </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label for="love">Do You Love Seattle?</label>
+                        <p data-for="love" class="error">Please select an option.</p>
+                        <select class="form-control required" name="love" id="love">
+                    <option selected disabled value=""></option>
+                    <option value="yes">Yes!!</option>
+                    <option value="no">No :(</option>
+                </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <p data-for="message" class="error">Please enter a message.</p>
+                        <textarea class="required form-control" rows="5" cols="100" id="message"></textarea>
+                    </div>
+                    <div class="buttons form-group">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-danger" type="reset" id="reset">Reset</button>
+                    </div>
+                    <div id="success">Your message has been successfully processed! Thanks for contacting us!</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container"><small>Thanks for checking out this project by Anna Elde 😊</small></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
