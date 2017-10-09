@@ -1,3 +1,34 @@
+@font-face
+{
+	/*License: http://anna.elde.codes/fonts/arcon/SIL Open Font License.txt */
+	font-family: arcon;
+	src: url(/static/fonts/arcon/Arcon-Regular.otf);
+}
+
+#back
+{
+	background: #db3069;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	font: 1.2em arcon, arial, sans-serif;
+	height: 30px;
+	padding-left: 1em;
+    position: fixed;
+    top: 0;
+	width: 100%;
+	z-index: 1000000;
+}
+
+#back a
+{
+	color: #fafafa;
+	text-decoration: none;
+}
+
+nav
+{
+    top: 30px !important;
+}
+
 body
 {
 	background: snow;
