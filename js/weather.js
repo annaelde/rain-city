@@ -18,7 +18,7 @@
 
     // Initialize XMLHttpRequest
     var xhr = new XMLHttpRequest();
-    var url = "http://api.openweathermap.org/data/2.5/weather?id=5809844&APPID=5156c99a94135d37e799dcc7e560ed22";
+    var url = "https://api.openweathermap.org/data/2.5/weather?id=5809844&APPID=5156c99a94135d37e799dcc7e560ed22";
 
     // Assign event handler to XMLHttpRequest
     xhr.onreadystatechange = function ()
