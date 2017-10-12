@@ -22,6 +22,7 @@
     var slideshow = document.getElementById("slideshow");
     var image = slideshow.getElementsByTagName("img")[0];
     var caption = slideshow.getElementsByClassName("figure-caption")[0];
+    var loadIcon = slideshow.getElementsByClassName("load-icon")[0];
 
     // Assign event handlers
     slideshow.getElementsByClassName("next")[0].addEventListener("click", function(){
@@ -38,12 +39,18 @@
         setSlide();
     });
 
+    // Show loading icon
+    image.addEventListener('load', function(){
+        loadIcon.style.display = "none"
+    });
+
     // Initialize the slideshow
     setSlide();
 
     function setSlide()
     {
         // Update caption and image file
+        loadIcon.style.display = "block"
         image.src = "images/" + images[currentImage].file;
         caption.innerHTML = images[currentImage].caption;
     }
